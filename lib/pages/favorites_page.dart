@@ -28,7 +28,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                   height: 300,
                   width: 300,
                   child: Lottie.asset(
-                    "images/lottie/favorites.json",
+                    "assets/lottie/favorites.json",
                     repeat: false,
                     fit: BoxFit.fitWidth,
                   ),

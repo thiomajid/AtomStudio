@@ -25,7 +25,7 @@ class _PlayListPageState extends State<PlayListPage> {
             Row(
               children: [
                 Lottie.asset(
-                  "images/lottie/playlist.json",
+                  "assets/lottie/playlist.json",
                   frameRate: FrameRate(20),
                 ),
                 Text(

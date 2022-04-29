@@ -22,7 +22,7 @@ class _SettingsPageState extends State<SettingsPage> {
           Row(
             children: [
               Lottie.asset(
-                "images/lottie/settings.json",
+                "assets/lottie/settings.json",
                 height: 300,
                 alignment: Alignment.bottomCenter,
                 repeat: false,

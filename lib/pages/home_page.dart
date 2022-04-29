@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                     color: AtomColors.gunmetal,
                     child: Row(
                       children: [
-                        Lottie.asset("images/lottie/music-listener.json",
+                        Lottie.asset("assets/lottie/music-listener.json",
                             height: 300, alignment: Alignment.bottomCenter),
                         AnimatedTextKit(
                           repeatForever: true,

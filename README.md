@@ -2,7 +2,7 @@
 
 ## It's a desktop music player developed as a side project.
 
-Currently only the UI is being created.
+Currently only UI is being created.
 
 ---
 

@@ -82,7 +82,7 @@ class HomeCards extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    print("object");
+                    Navigator.pushNamed(context, "/songs");
                   },
                 ),
               ],
@@ -158,7 +158,7 @@ class HomeCards extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    print("object");
+                    Navigator.pushNamed(context, "/videos");
                   },
                 ),
               ],
@@ -234,7 +234,7 @@ class HomeCards extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    print("object");
+                    Navigator.pushNamed(context, "/discover");
                   },
                 ),
               ],
@@ -307,7 +307,7 @@ class HomeCards extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    print("object");
+                    Navigator.pushNamed(context, "/settings");
                   },
                 ),
               ],

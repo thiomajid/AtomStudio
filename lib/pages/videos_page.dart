@@ -25,7 +25,7 @@ class _VideosPageState extends State<VideosPage> {
             Row(
               children: [
                 Lottie.asset(
-                  "images/lottie/video-cam.json",
+                  "assets/lottie/video-cam.json",
                 ),
                 Text(
                   "Y",

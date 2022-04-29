@@ -25,7 +25,7 @@ class _SongsPageState extends State<SongsPage> {
             Row(
               children: [
                 Lottie.asset(
-                  "images/lottie/music-note.json",
+                  "assets/lottie/music-note.json",
                 ),
                 Text(
                   "Y",
