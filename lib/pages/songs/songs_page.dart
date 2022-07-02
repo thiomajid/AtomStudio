@@ -1,16 +1,16 @@
+import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:music_player/utility/atom_colors.dart';
 
-class PlayListPage extends StatefulWidget {
-  const PlayListPage({Key? key}) : super(key: key);
+class SongsPage extends StatefulWidget {
+  const SongsPage({Key? key}) : super(key: key);
 
   @override
-  State<PlayListPage> createState() => _PlayListPageState();
+  State<SongsPage> createState() => _SongsPageState();
 }
 
-class _PlayListPageState extends State<PlayListPage> {
+class _SongsPageState extends State<SongsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +25,7 @@ class _PlayListPageState extends State<PlayListPage> {
             Row(
               children: [
                 Lottie.asset(
-                  "assets/lottie/playlist.json",
-                  frameRate: FrameRate(20),
+                  "assets/lottie/music-note.json",
                 ),
                 Text(
                   "Y",
@@ -42,14 +41,14 @@ class _PlayListPageState extends State<PlayListPage> {
                   ),
                 ),
                 Text(
-                  ' P',
+                  ' S',
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(
                         fontSize: 55, fontStyle: FontStyle.italic),
                   ),
                 ),
                 Text(
-                  "laylists",
+                  "ongs",
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(fontSize: 35),
                   ),

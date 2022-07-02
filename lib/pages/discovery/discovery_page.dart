@@ -1,8 +1,8 @@
+import 'package:atom_studio/pages/discovery/widgets/editors_choice.dart';
+import 'package:atom_studio/pages/discovery/widgets/header.dart';
+import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:music_player/components/discovery/editors_choice.dart';
-import 'package:music_player/components/discovery/header.dart';
-import 'package:music_player/utility/atom_colors.dart';
 
 class DiscoveryPage extends StatefulWidget {
   const DiscoveryPage({Key? key}) : super(key: key);
@@ -10,8 +10,6 @@ class DiscoveryPage extends StatefulWidget {
   @override
   State<DiscoveryPage> createState() => _DiscoveryPageState();
 }
-
-//TODO: use async programming to ensure songs.json reading always done.
 
 class _DiscoveryPageState extends State<DiscoveryPage> {
   @override

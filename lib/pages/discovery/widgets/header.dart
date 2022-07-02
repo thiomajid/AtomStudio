@@ -1,8 +1,8 @@
+import 'package:atom_studio/utility/atom_colors.dart';
+import 'package:atom_studio/utility/clips.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:music_player/utility/atom_colors.dart';
-import 'package:music_player/utility/clips.dart';
 
 class DiscoveryHeader extends StatelessWidget {
   const DiscoveryHeader({Key? key}) : super(key: key);

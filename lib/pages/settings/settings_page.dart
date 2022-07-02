@@ -1,7 +1,8 @@
+import 'package:atom_studio/pages/settings/widgets/audio_parameters.dart';
+import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:music_player/utility/atom_colors.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -45,6 +46,16 @@ class _SettingsPageState extends State<SettingsPage> {
           const Divider(
             thickness: 2,
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Text(
+              "Audio Settings",
+              style: GoogleFonts.courgette(
+                textStyle: const TextStyle(fontSize: 35),
+              ),
+            ),
+          ),
+          const AudioParameters()
         ],
       ),
     );

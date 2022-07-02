@@ -1,6 +1,6 @@
 {
-    "name": "music_player",
-    "short_name": "music_player",
+    "name": "atom_studio",
+    "short_name": "atom_studio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

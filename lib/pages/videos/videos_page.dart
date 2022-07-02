@@ -1,16 +1,16 @@
+import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:music_player/utility/atom_colors.dart';
 
-class FavoritesPage extends StatefulWidget {
-  const FavoritesPage({Key? key}) : super(key: key);
+class VideosPage extends StatefulWidget {
+  const VideosPage({Key? key}) : super(key: key);
 
   @override
-  State<FavoritesPage> createState() => _FavoritesPageState();
+  State<VideosPage> createState() => _VideosPageState();
 }
 
-class _FavoritesPageState extends State<FavoritesPage> {
+class _VideosPageState extends State<VideosPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,37 +24,31 @@ class _FavoritesPageState extends State<FavoritesPage> {
           children: [
             Row(
               children: [
-                SizedBox(
-                  height: 300,
-                  width: 300,
-                  child: Lottie.asset(
-                    "assets/lottie/favorites.json",
-                    repeat: false,
-                    fit: BoxFit.fitWidth,
-                  ),
+                Lottie.asset(
+                  "assets/lottie/video-cam.json",
                 ),
                 Text(
-                  "F",
+                  "Y",
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(
                         fontSize: 55, fontStyle: FontStyle.italic),
                   ),
                 ),
                 Text(
-                  "avorite",
+                  "our",
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(fontSize: 35),
                   ),
                 ),
                 Text(
-                  ' S',
+                  ' V',
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(
                         fontSize: 55, fontStyle: FontStyle.italic),
                   ),
                 ),
                 Text(
-                  "ongs",
+                  "ideos",
                   style: GoogleFonts.courgette(
                     textStyle: const TextStyle(fontSize: 35),
                   ),

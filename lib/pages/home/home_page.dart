@@ -1,10 +1,10 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:atom_studio/pages/home/widgets/home_cards.dart';
+import 'package:atom_studio/utility/atom_colors.dart';
+import 'package:atom_studio/utility/clips.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:music_player/components/home/top_cards.dart';
-import 'package:music_player/utility/atom_colors.dart';
-import 'package:music_player/utility/clips.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
             const Padding(
               padding: EdgeInsets.all(20),
             ),
-            const Flexible(
+            Flexible(
               child: HomeCards(),
             ),
           ],
