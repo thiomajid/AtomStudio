@@ -1,5 +1,5 @@
 import 'package:atom_studio/utility/atom_colors.dart';
-import 'package:atom_studio/utility/home_card_model.dart';
+import 'package:atom_studio/utility/models/home_card_model.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 

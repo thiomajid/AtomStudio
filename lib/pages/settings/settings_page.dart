@@ -1,4 +1,4 @@
-import 'package:atom_studio/pages/settings/widgets/audio_parameters.dart';
+import 'package:atom_studio/pages/settings/widgets/setting_tiles.dart';
 import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -43,19 +43,18 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ],
           ),
-          const Divider(
-            thickness: 2,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 30),
-            child: Text(
-              "Audio Settings",
-              style: GoogleFonts.courgette(
-                textStyle: const TextStyle(fontSize: 35),
-              ),
+          const Padding(
+            padding: EdgeInsets.only(left: 25, right: 25),
+            child: Divider(
+              thickness: 2,
             ),
           ),
-          const AudioParameters()
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 30,
+            ),
+            child: SettingsTiles(),
+          ),
         ],
       ),
     );

@@ -3,8 +3,13 @@ import 'package:atom_studio/pages/favorites/favorites_page.dart';
 import 'package:atom_studio/pages/home/home_page.dart';
 import 'package:atom_studio/pages/playlist/playlist_page.dart';
 import 'package:atom_studio/pages/settings/settings_page.dart';
+import 'package:atom_studio/pages/settings/sub_pages/audio_parameters.dart';
+import 'package:atom_studio/pages/settings/sub_pages/discovery_settings.dart';
+import 'package:atom_studio/pages/settings/sub_pages/video_settings.dart';
+import 'package:atom_studio/pages/settings/sub_pages/youtube_settings.dart';
 import 'package:atom_studio/pages/songs/songs_page.dart';
 import 'package:atom_studio/pages/videos/videos_page.dart';
+import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -41,17 +46,31 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
         "/favorites": (context) => const FavoritesPage(),
         "/discover": (context) => const DiscoveryPage(),
         "/playlist": (context) => const PlayListPage(),
-        "/settings": (context) => const SettingsPage()
+        "/settings": (context) => const SettingsPage(),
+        "/settings/audio": (context) => const AudioParameters(),
+        "/settings/video": (context) => const VideoSettings(),
+        "/settings/youtube": (_) => const YoutubeSettings(),
+        "/settings/discovery": (_) => const DiscoverySettings(),
       },
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         accentColor: Colors.blue,
+        sliderTheme: const SliderThemeData(
+          activeColor: AtomColors.gunmetal,
+          useThumbBall: true,
+          labelBackgroundColor: AtomColors.gunmetal,
+        ),
         fontFamily: GoogleFonts.amiri().fontFamily,
         iconTheme: const IconThemeData(size: 24),
       ),
       darkTheme: ThemeData(
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: Colors.white,
         accentColor: Colors.blue,
+        sliderTheme: const SliderThemeData(
+          activeColor: AtomColors.gunmetal,
+          useThumbBall: true,
+          labelBackgroundColor: AtomColors.gunmetal,
+        ),
         fontFamily: GoogleFonts.amiri().fontFamily,
         iconTheme: const IconThemeData(size: 24),
       ),

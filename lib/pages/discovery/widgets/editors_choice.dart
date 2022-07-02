@@ -39,6 +39,8 @@ class _EditorsChoiceState extends State<EditorsChoice> {
         children: List.generate(
           _songs.length,
           (index) => OpenContainer(
+            closedColor: Colors.grey[20],
+            closedElevation: 0,
             transitionType: ContainerTransitionType.fadeThrough,
             transitionDuration: const Duration(milliseconds: 500),
             middleColor: AtomColors.gunmetal,
