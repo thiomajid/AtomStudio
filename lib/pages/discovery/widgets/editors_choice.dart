@@ -1,6 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:atom_studio/models/song_model.dart';
-import 'package:atom_studio/pages/discovery/widgets/card_template.dart';
+import 'package:atom_studio/pages/discovery/widgets/song_card_template.dart';
 import 'package:atom_studio/pages/song_detail/song_detail.dart';
 import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:atom_studio/view_models/discovery_view_model.dart';

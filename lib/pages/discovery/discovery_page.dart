@@ -1,5 +1,5 @@
+import 'package:atom_studio/pages/discovery/widgets/discovery_header.dart';
 import 'package:atom_studio/pages/discovery/widgets/editors_choice.dart';
-import 'package:atom_studio/pages/discovery/widgets/header.dart';
 import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
