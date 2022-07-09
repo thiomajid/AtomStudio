@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:atom_studio/models/song_model.dart';
 import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:atom_studio/utility/clips.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,7 +20,7 @@ class SongDetailPage extends StatelessWidget {
           Stack(
             children: [
               Opacity(
-                //semi red clippath with more height and with 0.5 opacity
+                //semi gray clippath with more height and with 0.5 opacity
                 opacity: 0.5,
                 child: ClipPath(
                   clipper: HomeHeaderClipper(), //set our custom wave clipper
@@ -40,10 +41,17 @@ class SongDetailPage extends StatelessWidget {
                         padding: const EdgeInsets.fromLTRB(20, 0, 0, 50),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(25),
-                          child: Image.network(
-                            "${song.imageUrl}",
+                          child: CachedNetworkImage(
+                            imageUrl: song.imageUrl ?? "",
                             width: 200,
                             height: 200,
+                            filterQuality: FilterQuality.high,
+                            placeholder: (context, url) =>
+                                const CircularProgressIndicator(
+                              color: Colors.white,
+                            ),
+                            errorWidget: (context, url, error) =>
+                                const Icon(Icons.error),
                           ),
                         ),
                       ),

@@ -1,7 +1,6 @@
+import 'package:atom_studio/pages/videos/widgets/video_page_header.dart';
 import 'package:atom_studio/utility/atom_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 
 class VideosPage extends StatefulWidget {
   const VideosPage({Key? key}) : super(key: key);
@@ -17,44 +16,10 @@ class _VideosPageState extends State<VideosPage> {
       appBar: AppBar(
         backgroundColor: AtomColors.gunmetal,
       ),
-      body: SizedBox(
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Row(
-              children: [
-                Lottie.asset(
-                  "assets/lottie/video-cam.json",
-                ),
-                Text(
-                  "Y",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(
-                        fontSize: 55, fontStyle: FontStyle.italic),
-                  ),
-                ),
-                Text(
-                  "our",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(fontSize: 35),
-                  ),
-                ),
-                Text(
-                  ' V',
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(
-                        fontSize: 55, fontStyle: FontStyle.italic),
-                  ),
-                ),
-                Text(
-                  "ideos",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(fontSize: 35),
-                  ),
-                ),
-              ],
-            ),
+          children: const [
+            VideoPageHeader(),
           ],
         ),
       ),

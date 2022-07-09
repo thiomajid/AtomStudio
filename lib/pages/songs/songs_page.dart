@@ -1,4 +1,5 @@
 import 'package:atom_studio/utility/atom_colors.dart';
+import 'package:atom_studio/utility/clips.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -22,35 +23,72 @@ class _SongsPageState extends State<SongsPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Row(
+            Stack(
               children: [
-                Lottie.asset(
-                  "assets/lottie/music-note.json",
-                ),
-                Text(
-                  "Y",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(
-                        fontSize: 55, fontStyle: FontStyle.italic),
+                Opacity(
+                  //semi red clippath with more height and with 0.5 opacity
+                  opacity: 0.5,
+                  child: ClipPath(
+                    clipper: HomeHeaderClipper(), //set our custom wave clipper
+                    child: Container(
+                      color: AtomColors.gunmetal,
+                      height: 390,
+                    ),
                   ),
                 ),
-                Text(
-                  "our",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(fontSize: 35),
-                  ),
-                ),
-                Text(
-                  ' S',
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(
-                        fontSize: 55, fontStyle: FontStyle.italic),
-                  ),
-                ),
-                Text(
-                  "ongs",
-                  style: GoogleFonts.courgette(
-                    textStyle: const TextStyle(fontSize: 35),
+                ClipPath(
+                  clipper: HomeHeaderClipper(),
+                  child: Container(
+                    color: AtomColors.gunmetal,
+                    height: 380,
+                    child: Row(
+                      children: [
+                        Lottie.asset(
+                          "assets/lottie/headset.json",
+                          repeat: false,
+                        ),
+                        const Padding(
+                            padding: EdgeInsets.fromLTRB(25, 0, 0, 25)),
+                        Text(
+                          "Y",
+                          style: GoogleFonts.courgette(
+                            textStyle: const TextStyle(
+                              fontSize: 55,
+                              fontStyle: FontStyle.italic,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "our",
+                          style: GoogleFonts.courgette(
+                            textStyle: const TextStyle(
+                              fontSize: 35,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          ' S',
+                          style: GoogleFonts.courgette(
+                            textStyle: const TextStyle(
+                              fontSize: 55,
+                              fontStyle: FontStyle.italic,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "ongs",
+                          style: GoogleFonts.courgette(
+                            textStyle: const TextStyle(
+                              fontSize: 35,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
